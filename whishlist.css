@@ -1,0 +1,190 @@
+/* Reset some default styles for the page */
+
+/* CSS styles for the product section */
+
+.section {
+    padding: 40px 0;
+}
+
+.section-subtitle {
+    color: #888;
+    font-size: 16px;
+}
+
+.section-title {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.top-product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.top-product-item {
+    margin: 0;
+    padding: 0;
+    width: calc(33.33% - 20px);
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.card-banner {
+    position: relative;
+}
+
+.card-banner img {
+    max-width: 100px;
+    height: auto;
+}
+
+.btn-wrapper {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+}
+
+.product-btn {
+    background-color: #fff;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.product-btn:hover {
+    background-color: #eee;
+}
+
+.tooltip {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    font-size: 12px;
+}
+
+.product-btn:hover .tooltip {
+    display: block;
+}
+
+.rating-wrapper {
+    color: #ffd700;
+    font-size: 16px;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.price-wrapper {
+    margin: 10px 0;
+}
+
+.del {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styling to the header and navigation */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+}
+
+.navbar-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Basic styling for the main content area and footer */
+.product-content {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-image: url(bgbg2.jpg);
+            background-size: cover;
+        }
+
+        #container {
+            margin: auto;
+            width: 70%;
+            height: 800px;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+        #form {
+            background-image: url(bgbg.jpg);
+        }
+
+        #inner {
+            width: 500px;
+            height: 510px;
+            margin: auto;
+            text-align: center;
+            font-family: Roboto, sans-serif;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding-top: 20px;
+            background-image: url(bgbg.jpg);
+            margin-top: 100px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        #head {
+            margin-top: 0px;
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: #151613;
+        }
+
+        #logo {
+            width: 20%;
+            height: 15%;
+            margin: auto;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #email {
+            width: 80%;
+            height: 25px;
+            margin-top: 30px;
+            border: none;
+            border-bottom: 1px solid gray;
+            color: #333333;
+            outline: none;
+            font-style: italic;
+        }
+        #phone {
+            width: 80%;
+            height: 25px;
+            margin-top: 30px;
+            border: none;
+            border-bottom: 1px solid gray;
+            color: #333333;
+            outline: none;
+            font-style: italic;
+        }
+
+        #message {
+            width: 80%;
+            height: 100px;
+            margin-top: 30px;
+            border: none;
+            border-bottom: 1px solid gray;
+            color: #333333;
+            outline: none;
+            font-style: italic;
+        }
+
+        #submit {
+            width: 80%;
+            height: 40px;
+            margin-top: 30px;
+            background-color: #84c225;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 8px;
+            position: relative;
+            font-weight: lighter;
+            color: #333333;
+            font-family: sans-serif;
+            line-height: 15px;
+        }
+
+        a {
+            color: royalblue;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="inner">
+        <div id="logo">
+            <img src="farmpicked.png" alt="" />
+        </div>
+        <div id="head">
+            <h3>Contact Us</h3>
+        </div>
+        <form action="" id="form" onsubmit="submitForm(event)">
+            <input id="email" type="email" placeholder="Enter Email" /><br />
+            <input id="phone" type="phone" placeholder="Enter Phone Number" /><br />
+            <textarea id="message" placeholder="Enter your message"></textarea><br />
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <p>
+            You can also reach out to us at <a href="mailto:contact@farmpicked.com">contact@farmpicked.com</a>.<br />
+            By contacting us, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.
+        </p>
+    </div>
+</body>
+</html>
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        if (!email || !phone || !message) {
+            alert("Please fill in email,phone and message fields.");
+        } else {
+            // You can add code here to handle the form submission, such as sending the data to a server.
+            alert("Message submitted successfully!");
+            // You can also redirect the user to a thank you page or perform any other desired action.
+        }
+    }
+</script>
